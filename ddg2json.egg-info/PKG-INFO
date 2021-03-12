@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: ddg2json
+Version: 0.1.0
+Summary: Parses scraped HTML of DuckDuckGo pages into JSON
+Home-page: UNKNOWN
+Author: NightMachinary
+Author-email: rudiwillalwaysloveyou@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7

@@ -1,0 +1,80 @@
+#+TITLE: ddg2json
+
+=ddg2json= parses scraped HTML of DuckDuckGo pages into JSON.
+
+* Usage
+#+begin_src bsh.dash :results verbatim :exports both :wrap example
+ddg2json -h
+#+end_src
+
+#+RESULTS:
+#+begin_example
+Usage: ddg2json.py < HTML_of_the_query_page_of_DuckDuckGo
+Output: JSON of the results in that HTML
+#+end_example
+
+** Example using [[https://github.com/NightMachinary/.shells/blob/master/scripts/javascript/curlfull.js][curlfull.js]]
+#+begin_src bsh.dash :results verbatim :exports both :wrap example
+cfTimeout=1 curlfull.js 'https://duckduckgo.com/?q=fruit&t=h_&ia=web' | ddg2json | jq .
+#+end_src
+
+#+RESULTS:
+#+begin_example
+[
+  {
+    "title": "List offruits- Simple English Wikipedia, the free ...",
+    "url": "https://simple.wikipedia.org/wiki/List_of_fruits",
+    "abstract": "Uglifruit; White currant; White sapote; Yuzu; The following items arefruits, according to the scientific definition, but are sometimes considered to be vegetables: Bell pepper; Chile pepper; Corn kernel; Cucumber; Eggplant; Jalapeño; Olive; Pea; Pumpkin; Squash; Tomato; Zucchini This page was last changed on 26 February 2021, at 19:18. Text is available under the Creative Commons ..."
+  },
+  {
+    "title": "Fruit- Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Fruit",
+    "abstract": "In botany, afruitis the seed-bearing structure in flowering plants (also known as angiosperms) formed from the ovary after flowering..Fruitsare the means by which angiosperms disseminate seeds.Ediblefruits, in particular, have propagated with the movements of humans and animals in a symbiotic relationship as a means for seed dispersal and nutrition; in fact, humans and many animals have ..."
+  },
+  {
+    "title": "Fruit- Simple English Wikipedia, the free encyclopedia",
+    "url": "https://simple.wikipedia.org/wiki/Fruit",
+    "abstract": "In botany, afruitis a plant structure that contains the plant's seeds. To a botanist, the wordfruitis used only if it comes from the part of the flower which was an ovary. It is an extra layer round the seeds, which may or may not be fleshy. However, even in the field of botany, there is no general agreement on howfruitsshould be classified."
+  },
+  {
+    "title": "fruit| Definition, Description, Types, Examples, & Facts ...",
+    "url": "https://www.britannica.com/science/fruit-plant-reproductive-body",
+    "abstract": "Fruit, the fleshy or dry ripened ovary of a flowering plant, enclosing the seed or seeds. Thus, apricots, bananas, and grapes, as well as bean pods, corn grains, tomatoes, cucumbers, and (in their shells) acorns and almonds, are all technicallyfruits."
+  },
+  {
+    "title": "Fruit- definition offruitby The Free Dictionary",
+    "url": "https://www.thefreedictionary.com/fruit",
+    "abstract": "Fruitis usually an uncountable noun. Oranges, bananas, grapes, and apples are allfruit. You should eat plenty of freshfruitand vegetables. They importfruitfrom Australia."
+  },
+  {
+    "title": "FRUIT| meaning in the Cambridge English Dictionary",
+    "url": "https://dictionary.cambridge.org/dictionary/english/fruit",
+    "abstract": "the soft part containing seeds that is produced by a plant. Many types offruitare sweet and can be eaten: Apricots are the onefruitI don't like. Oranges, apples, pears, and bananas are all types offruit."
+  },
+  {
+    "title": "Fruit| Definition ofFruitat Dictionary.com",
+    "url": "https://www.dictionary.com/browse/fruit",
+    "abstract": "noun, pluralfruits, (especially collectively)fruit. any product of plant growth useful to humans or animals. the developed ovary of a seed plant with its contents and accessory parts, as the pea pod, nut, tomato, or pineapple. the edible part of a plant developed from a flower, with any accessory tissues, as the peach, mulberry, or banana."
+  },
+  {
+    "title": "List of culinaryfruits- Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/List_of_culinary_fruits",
+    "abstract": "\"Any sweet, edible part of a plant that resemblesfruit, even if it does not develop from a floral ovary; also used in a technically imprecise sense for some sweet or semi-sweet vegetables, some of which may resemble a truefruitor are used in cookery as if they were afruit, for example rhubarb.\""
+  },
+  {
+    "title": "The 20 HealthiestFruitson the Planet",
+    "url": "https://www.healthline.com/nutrition/20-healthiest-fruits",
+    "abstract": "Grapefruit is one of the healthiest citrusfruits. Besides being a good source of vitamins and minerals, it is known for its ability to aid weight loss and reduce insulin resistance. For example,..."
+  },
+  {
+    "title": "Fruitrecipes - BBC Food",
+    "url": "https://www.bbc.co.uk/food/fruit",
+    "abstract": "Fruitshould look fresh and appetising. Choosefruitthat's plump, firm, heavy for its size and unwrinkled. Smell is often a good indication of ripeness too, as is gently applying pressure to the..."
+  },
+  {
+    "title": "listofallfruit​",
+    "url": "?q=list%20of%20all%20fruit&t=h_",
+    "abstract": ""
+  }
+]
+#+end_example
