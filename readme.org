@@ -2,6 +2,14 @@
 
 =ddg2json= parses scraped HTML of DuckDuckGo pages into JSON.
 
+* Install
+#+begin_src bsh.dash :results verbatim :exports both :wrap example
+pip install -U git+https://github.com/NightMachinary/ddg2json
+#+end_src
+Or
+#+begin_src bsh.dash :results verbatim :exports both :wrap example
+pip install -U ddg2json
+#+end_src
 * Usage
 #+begin_src bsh.dash :results verbatim :exports both :wrap example
 ddg2json -h
@@ -32,14 +40,14 @@ cfTimeout=1 curlfull.js 'https://duckduckgo.com/?q=fruit&t=h_&ia=web' | ddg2json
     "abstract": "In botany, afruitis the seed-bearing structure in flowering plants (also known as angiosperms) formed from the ovary after flowering..Fruitsare the means by which angiosperms disseminate seeds.Ediblefruits, in particular, have propagated with the movements of humans and animals in a symbiotic relationship as a means for seed dispersal and nutrition; in fact, humans and many animals have ..."
   },
   {
-    "title": "Fruit- Simple English Wikipedia, the free encyclopedia",
-    "url": "https://simple.wikipedia.org/wiki/Fruit",
-    "abstract": "In botany, afruitis a plant structure that contains the plant's seeds. To a botanist, the wordfruitis used only if it comes from the part of the flower which was an ovary. It is an extra layer round the seeds, which may or may not be fleshy. However, even in the field of botany, there is no general agreement on howfruitsshould be classified."
-  },
-  {
     "title": "fruit| Definition, Description, Types, Examples, & Facts ...",
     "url": "https://www.britannica.com/science/fruit-plant-reproductive-body",
     "abstract": "Fruit, the fleshy or dry ripened ovary of a flowering plant, enclosing the seed or seeds. Thus, apricots, bananas, and grapes, as well as bean pods, corn grains, tomatoes, cucumbers, and (in their shells) acorns and almonds, are all technicallyfruits."
+  },
+  {
+    "title": "Fruit- Simple English Wikipedia, the free encyclopedia",
+    "url": "https://simple.wikipedia.org/wiki/Fruit",
+    "abstract": "In botany, afruitis a plant structure that contains the plant's seeds. To a botanist, the wordfruitis used only if it comes from the part of the flower which was an ovary. It is an extra layer round the seeds, which may or may not be fleshy. However, even in the field of botany, there is no general agreement on howfruitsshould be classified."
   },
   {
     "title": "Fruit- definition offruitby The Free Dictionary",
@@ -70,11 +78,6 @@ cfTimeout=1 curlfull.js 'https://duckduckgo.com/?q=fruit&t=h_&ia=web' | ddg2json
     "title": "Fruitrecipes - BBC Food",
     "url": "https://www.bbc.co.uk/food/fruit",
     "abstract": "Fruitshould look fresh and appetising. Choosefruitthat's plump, firm, heavy for its size and unwrinkled. Smell is often a good indication of ripeness too, as is gently applying pressure to the..."
-  },
-  {
-    "title": "listofallfruit​",
-    "url": "?q=list%20of%20all%20fruit&t=h_",
-    "abstract": ""
   }
 ]
 #+end_example

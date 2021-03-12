@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "ddg2json"
-version = "0.1.0"
+version = "0.1.1"
 description = "Parses scraped HTML of DuckDuckGo pages into JSON"
 authors = ["NightMachinary <rudiwillalwaysloveyou@gmail.com>"]
 license = "MIT"
@@ -9,10 +9,9 @@ license = "MIT"
 python = ">=3.7"
 beautifulsoup4 = ">=4.8"
 
-[tool.poetry.dev-dependencies]
-
 [tool.poetry.scripts]
 ddg2json = 'ddg2json:main'
+
 
 [tool.dephell.main]
 from = {format = "poetry", path = "pyproject.toml"}
