@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "ddg2json"
-version = "0.1.1"
+version = "0.1.2"
 description = "Parses scraped HTML of DuckDuckGo pages into JSON"
 authors = ["NightMachinary <rudiwillalwaysloveyou@gmail.com>"]
 license = "MIT"
@@ -11,6 +11,7 @@ beautifulsoup4 = ">=4.8"
 
 [tool.poetry.scripts]
 ddg2json = 'ddg2json:main'
+
 
 
 [tool.dephell.main]

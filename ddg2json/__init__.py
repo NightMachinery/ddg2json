@@ -71,7 +71,8 @@ def main():
             title = link.getText(strip=True)
             snippet = ""
             try:
-                snippet = r.find("div", "result__snippet").getText(strip=True)
+                # snippet = r.find("div", "result__snippet").getText(strip=True)
+                snippet = r.find("div", "result__snippet").getText(strip=False).strip()
             except:
                 pass
             processed.append({"title": title, "url": url, "abstract": snippet})
