@@ -8,8 +8,6 @@ import json
 import sys
 import os
 from bs4 import BeautifulSoup
-import urllib.parse
-
 
 def main():
     ## inputs
@@ -41,9 +39,10 @@ def main():
 
         from brish import z
 
-        query_encoded = urllib.parse.quote(query)
+        # import urllib.parse
+        # query_encoded = urllib.parse.quote(query)
 
-        zres = z("ddg-html {query_encoded}")
+        zres = z("ddg-html {query}")
         if not zres:
             logger.error(f"Could not download page for query '{query}'")
             exit(1)
