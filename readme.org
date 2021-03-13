@@ -30,54 +30,54 @@ cfTimeout=1 curlfull.js 'https://duckduckgo.com/?q=fruit&t=h_&ia=web' | ddg2json
 #+begin_example
 [
   {
-    "title": "List offruits- Simple English Wikipedia, the free ...",
+    "title": "List of fruits - Simple English Wikipedia, the free ...",
     "url": "https://simple.wikipedia.org/wiki/List_of_fruits",
     "abstract": "Ugli fruit; White currant; White sapote; Yuzu; The following items are fruits, according to the scientific definition, but are sometimes considered to be vegetables: Bell pepper; Chile pepper; Corn kernel; Cucumber; Eggplant; Jalapeño; Olive; Pea; Pumpkin; Squash; Tomato; Zucchini This page was last changed on 26 February 2021, at 19:18. Text is available under the Creative Commons ..."
   },
   {
-    "title": "Fruit- Wikipedia",
+    "title": "Fruit - Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Fruit",
     "abstract": "In botany, a fruit is the seed-bearing structure in flowering plants (also known as angiosperms) formed from the ovary after flowering.. Fruits are the means by which angiosperms disseminate seeds.Edible fruits, in particular, have propagated with the movements of humans and animals in a symbiotic relationship as a means for seed dispersal and nutrition; in fact, humans and many animals have ..."
   },
   {
-    "title": "Fruit- Simple English Wikipedia, the free encyclopedia",
-    "url": "https://simple.wikipedia.org/wiki/Fruit",
-    "abstract": "In botany, a fruit is a plant structure that contains the plant's seeds. To a botanist, the word fruit is used only if it comes from the part of the flower which was an ovary. It is an extra layer round the seeds, which may or may not be fleshy. However, even in the field of botany, there is no general agreement on how fruits should be classified."
-  },
-  {
-    "title": "fruit| Definition, Description, Types, Examples, & Facts ...",
+    "title": "fruit | Definition, Description, Types, Examples, & Facts ...",
     "url": "https://www.britannica.com/science/fruit-plant-reproductive-body",
     "abstract": "Fruit, the fleshy or dry ripened ovary of a flowering plant, enclosing the seed or seeds. Thus, apricots, bananas, and grapes, as well as bean pods, corn grains, tomatoes, cucumbers, and (in their shells) acorns and almonds, are all technically fruits."
   },
   {
-    "title": "Fruit- definition offruitby The Free Dictionary",
+    "title": "Fruit - Simple English Wikipedia, the free encyclopedia",
+    "url": "https://simple.wikipedia.org/wiki/Fruit",
+    "abstract": "In botany, a fruit is a plant structure that contains the plant's seeds. To a botanist, the word fruit is used only if it comes from the part of the flower which was an ovary. It is an extra layer round the seeds, which may or may not be fleshy. However, even in the field of botany, there is no general agreement on how fruits should be classified."
+  },
+  {
+    "title": "Fruit - definition of fruit by The Free Dictionary",
     "url": "https://www.thefreedictionary.com/fruit",
     "abstract": "Fruit is usually an uncountable noun. Oranges, bananas, grapes, and apples are all fruit. You should eat plenty of fresh fruit and vegetables. They import fruit from Australia."
   },
   {
-    "title": "FRUIT| meaning in the Cambridge English Dictionary",
+    "title": "FRUIT | meaning in the Cambridge English Dictionary",
     "url": "https://dictionary.cambridge.org/dictionary/english/fruit",
     "abstract": "the soft part containing seeds that is produced by a plant. Many types of fruit are sweet and can be eaten: Apricots are the one fruit I don't like. Oranges, apples, pears, and bananas are all types of fruit."
   },
   {
-    "title": "Fruit| Definition ofFruitat Dictionary.com",
+    "title": "Fruit | Definition of Fruit at Dictionary.com",
     "url": "https://www.dictionary.com/browse/fruit",
     "abstract": "noun, plural fruits, (especially collectively) fruit. any product of plant growth useful to humans or animals. the developed ovary of a seed plant with its contents and accessory parts, as the pea pod, nut, tomato, or pineapple. the edible part of a plant developed from a flower, with any accessory tissues, as the peach, mulberry, or banana."
   },
   {
-    "title": "List of culinaryfruits- Wikipedia",
+    "title": "List of culinary fruits - Wikipedia",
     "url": "https://en.wikipedia.org/wiki/List_of_culinary_fruits",
     "abstract": "\"Any sweet, edible part of a plant that resembles fruit, even if it does not develop from a floral ovary; also used in a technically imprecise sense for some sweet or semi-sweet vegetables, some of which may resemble a true fruit or are used in cookery as if they were a fruit, for example rhubarb.\""
   },
   {
-    "title": "The 20 HealthiestFruitson the Planet",
-    "url": "https://www.healthline.com/nutrition/20-healthiest-fruits",
-    "abstract": "Grapefruit is one of the healthiest citrus fruits. Besides being a good source of vitamins and minerals, it is known for its ability to aid weight loss and reduce insulin resistance. For example,..."
-  },
-  {
-    "title": "Fruitrecipes - BBC Food",
+    "title": "Fruit recipes - BBC Food",
     "url": "https://www.bbc.co.uk/food/fruit",
     "abstract": "Fruit should look fresh and appetising. Choose fruit that's plump, firm, heavy for its size and unwrinkled. Smell is often a good indication of ripeness too, as is gently applying pressure to the..."
+  },
+  {
+    "title": "The 20 Healthiest Fruits on the Planet",
+    "url": "https://www.healthline.com/nutrition/20-healthiest-fruits",
+    "abstract": "Grapefruit is one of the healthiest citrus fruits. Besides being a good source of vitamins and minerals, it is known for its ability to aid weight loss and reduce insulin resistance. For example,..."
   }
 ]
 #+end_example

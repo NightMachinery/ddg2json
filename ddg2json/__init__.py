@@ -3,6 +3,7 @@
 # except:
 #     pass
 import traceback
+import re
 import logging
 import json
 import sys
@@ -67,7 +68,7 @@ def main():
             url = link.get("href")
             if url.startswith("https://duckduckgo.com") or (not url.startswith("http")):
                 continue
-            title = link.getText(strip=True)
+            title = re.sub(r"\s+", ' ', link.getText(strip=False)).strip()
             snippet = ""
             try:
                 # snippet = r.find("div", "result__snippet").getText(strip=True)
