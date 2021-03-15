@@ -3,13 +3,13 @@
 =ddg2json= parses scraped HTML of DuckDuckGo pages into JSON.
 
 * Install
-#+begin_src bsh.dash :results verbatim :exports both :wrap example
+#+begin_example zsh
 pip install -U git+https://github.com/NightMachinary/ddg2json
-#+end_src
+#+end_example
 Or
-#+begin_src bsh.dash :results verbatim :exports both :wrap example
+#+begin_example zsh
 pip install -U ddg2json
-#+end_src
+#+end_example
 * Usage
 #+begin_src bsh.dash :results verbatim :exports both :wrap example
 ddg2json -h
@@ -17,7 +17,7 @@ ddg2json -h
 
 #+RESULTS:
 #+begin_example
-Usage: ddg2json.py < HTML_of_the_query_page_of_DuckDuckGo
+Usage: ddg2json < HTML_of_the_query_page_of_DuckDuckGo
 Output: JSON of the results in that HTML
 #+end_example
 
@@ -70,14 +70,14 @@ cfTimeout=1 curlfull.js 'https://duckduckgo.com/?q=fruit&t=h_&ia=web' | ddg2json
     "abstract": "\"Any sweet, edible part of a plant that resembles fruit, even if it does not develop from a floral ovary; also used in a technically imprecise sense for some sweet or semi-sweet vegetables, some of which may resemble a true fruit or are used in cookery as if they were a fruit, for example rhubarb.\""
   },
   {
-    "title": "Fruit recipes - BBC Food",
-    "url": "https://www.bbc.co.uk/food/fruit",
-    "abstract": "Fruit should look fresh and appetising. Choose fruit that's plump, firm, heavy for its size and unwrinkled. Smell is often a good indication of ripeness too, as is gently applying pressure to the..."
-  },
-  {
     "title": "The 20 Healthiest Fruits on the Planet",
     "url": "https://www.healthline.com/nutrition/20-healthiest-fruits",
     "abstract": "Grapefruit is one of the healthiest citrus fruits. Besides being a good source of vitamins and minerals, it is known for its ability to aid weight loss and reduce insulin resistance. For example,..."
+  },
+  {
+    "title": "Fruit Baskets By Post | Next Day Fruit Baskets Delivery ...",
+    "url": "https://www.expressgiftservice.co.uk/send-flowers-and-gifts-to-UK/fruit-basket-delivery",
+    "abstract": "Our Fresh Fruit Hampers and Luxury Fruit Baskets comes filled with brimming fresh fruits is a wonderful way to send greetings on birthdays, anniversary, getwell soon or chrismtas. Fruit Baskets By Occasion (37) Fruit Baskets By Type (37) Fruit Baskets By Person (30) Fruit Baskets By Price (36) Dried Fruit & Nuts (7) Next Day Fruit Baskets (87) All Fruit Baskets (87) 1 2 > >| Gourmet Nuts Tray ..."
   }
 ]
 #+end_example
